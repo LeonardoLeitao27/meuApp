@@ -4,36 +4,17 @@ import { render } from "react-native/Libraries/Renderer/implementations/ReactNat
 
 
 class App extends Component{
-  
-
   render(){
-
     return(
-      <View style={styles.area}>
-
-
-        <Text style={[styles.textoPrincipal, styles.alinhaTexto]}>Eu sou texto1</Text>
-        <Text style={styles.alinhaTexto}>Eu sou texto2</Text>
-        <Text>Eu sou texto3</Text>
-        <Text>Eu sou texto4</Text>
-
+      <View style={{flex:1,backgroundColor:'#444'}}>
+          <View style={{flex:1,backgroundColor: 'red'}}></View>
+          <View style={{flex:1,backgroundColor: 'green'}}></View>
+          <View style={{flex:1,backgroundColor: 'yellow'}}></View>
       </View>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  area:{
-    marginTop:40
-  },
-  textoPrincipal:{
-    fontSize: 25,
-    color: 'red'
-  },
-  alinhaTexto:{
-    textAlign: 'center'
-  }
-});
 
 
 export default App;
